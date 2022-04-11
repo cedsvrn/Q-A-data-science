@@ -1,2 +1,2 @@
-# Q-A-data-science
-Q&amp;A questions about data science.
+# Q&A
+Q&A questions about data science.

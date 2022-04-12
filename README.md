@@ -9,5 +9,6 @@ FIXME
 Goal : recommend a product P to a user A
 
 - Collaborative filtering (CF) : Try to  find similar user to A and recommend what those users consumes.
-Issue : Cold start
-- Content based (CB) :  Regroup products and recommend products close to P
+Cons : Cold start (need user-item interactions), algorithms not standards.
+- Content based (CB) :  Regroup products and recommend products close to P. 
+Pros : Classification problem.

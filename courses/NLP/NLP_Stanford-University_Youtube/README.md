@@ -73,7 +73,7 @@ Disjunctions :
 - **? = optional previsou char**
     - colou?r = "color" OR "colour"
 
-- *** = zero or more of previous char**
+- **\* = zero or more of previous char**
     - oua*h! = "ouh!" OR "ouah!" OR "ouaah!" OR "ouaaah!" OR "ouaaaaaah!" ...
 
 - **+ = one or more of previous char**

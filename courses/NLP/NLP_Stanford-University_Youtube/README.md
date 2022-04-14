@@ -3,12 +3,12 @@ https://www.youtube.com/watch?v=oWsMIW-5xUc&list=PLLssT5z_DsK8HbD2sPcUIDfQ7zmBar
 
 
 ## Course 1 : Introduction
-Mostly solved :
+**Mostly solved :**
 - Spam detection
 - Part-of-speech (POS) : Saying "blue" is an adjective, "drink" is a verb ...
 - Named entity recognition (NER) : Saying "Einstein" is a person, "Paris" is a localisation ...
 
-Making good progress : 
+**Making good progress : **
 - Sentiment analysis
 - Coreference resolution
 - Word sense disambiguation (WSD) : knowing if mouse is an item or an animal
@@ -16,13 +16,13 @@ Making good progress :
 - Machine translation (MT)
 - Information extraction : "You're invited in Paris, Sunday 10th february at 10:45" -> "Paris", "Sunday 10th february", "10:45"
 
-Still really hard :
+**Still really hard :**
 - Question answering (QA)
 - Paraphrase : saying the same thing with other words
 - Summarization
 - Dialog
 
-What makes NLP hard :
+**What makes NLP hard :**
 - Ambiguity : knowing wich word is a verb, noun, in specific sentences.
 - Non-standard engish
 - Segmentation (parsing) issue : New York
@@ -31,7 +31,7 @@ What makes NLP hard :
 
 --> Probabilistic models with text features
 
-Program : 
+**Course Program :**
 - Viterbi
 - Naive Bayes, Maxent Classifiers
 - N-gram language modeling
@@ -103,4 +103,43 @@ Disjunctions :
 **Reducing the errors =**
 - Increasing accuracy or precising (minimizing false positive)
 - Incresing coverage or recall (minimizing false negatives)
+
+## Course 3 : Regular expressions in NLP
+
+**Tokenizer :**
+Lexer = tokenizer
+
+Regexp are used in tokenizers to parse the text.
+
+Mediu article on subject : https://towardsdatascience.com/dynamic-word-tokenization-with-regex-tokenizer-801ae839d1cd
+
+## Course 4 : Word tokenization
+
+**Every NLP task need to do text normalization :**
+1 - Segmenting/tokenizing words in running text
+2 - Normalizing word formats
+3 - Segmenting sentences in running text
+
+**How many words in a sentence ?**
+- Depends of the definition of "word"
+- Do we use lemma ? Meaning cats and cat counts as 1
+- N = number of tokens
+- V = vocabulary = set of types
+
+**Issue in tokenization :**
+- what're, I'm, isn't --> What are, I am, is not
+- state-of-the-art --> state of the art ?
+- San Francisco --> One or two token ?
+- Chinese and Japanese : No spaces between words
+- Japan : multiple alphabets
+
+Work tokenization = Word Segmentation
+
+**Maximum matching Word segmentation Algorithm used for Chinese (Greedy) :**
+1 - Start with the first letter of the word
+2 - Find the longest matching word in the dictionnary
+3 - End the word and start again at 2
+
+--> not good in English
+--> Greedy works well in Chinese but probabilistic segmentation algorithms work even better
 

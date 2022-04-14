@@ -116,9 +116,9 @@ Mediu article on subject : https://towardsdatascience.com/dynamic-word-tokenizat
 ## Course 4 : Word tokenization
 
 **Every NLP task need to do text normalization :**
-1 - Segmenting/tokenizing words in running text
-2 - Normalizing word formats
-3 - Segmenting sentences in running text
+1. Segmenting/tokenizing words in running text
+2. Normalizing word formats
+3. Segmenting sentences in running text
 
 **How many words in a sentence ?**
 - Depends of the definition of "word"
@@ -136,9 +136,9 @@ Mediu article on subject : https://towardsdatascience.com/dynamic-word-tokenizat
 Work tokenization = Word Segmentation
 
 **Maximum matching Word segmentation Algorithm used for Chinese (Greedy) :**
-1 - Start with the first letter of the word
-2 - Find the longest matching word in the dictionnary
-3 - End the word and start again at 2
+1. Start with the first letter of the word
+2. Find the longest matching word in the dictionnary
+3. End the word and start again at 2
 
 --> not good in English
 --> Greedy works well in Chinese but probabilistic segmentation algorithms work even better

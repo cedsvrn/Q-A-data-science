@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=oWsMIW-5xUc&list=PLLssT5z_DsK8HbD2sPcUIDfQ7zmBar
 - Part-of-speech (POS) : Saying "blue" is an adjective, "drink" is a verb ...
 - Named entity recognition (NER) : Saying "Einstein" is a person, "Paris" is a localisation ...
 
-**Making good progress : **
+**Making good progress :**
 - Sentiment analysis
 - Coreference resolution
 - Word sense disambiguation (WSD) : knowing if mouse is an item or an animal

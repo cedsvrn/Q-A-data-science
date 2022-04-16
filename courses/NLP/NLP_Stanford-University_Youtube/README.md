@@ -143,3 +143,31 @@ Work tokenization = Word Segmentation
 --> not good in English
 --> Greedy works well in Chinese but probabilistic segmentation algorithms work even better
 
+## Course 5 : Word Normalization and Stemming
+
+**Normalize = text with same meaning must have the same form**
+- U.S.A should match USA
+
+Solutions : 
+1. Statis operations : deleting periods (.) in words
+2. Asymmetric expansion : entering "window", searching for "Window", "Windows", "window", "windows"
+
+We tend to convert upper case to lower case, except if it is in middle of a sentence.
+
+**Lemmatization = reduce inflections to base form**
+- cars, car's, car, cars' --> car
+- are, am, is -> be
+
+Morphology = study of morphemes = the small meaningful unit that make words
+- Stems = core unit
+- Affixes = bits that adhere to stems, before of after
+
+**Stemming = taking off affixes**
+- automate, automates, automatic, automation --> automat
+
+Porter's Algorithm = most common english stemmer
+- Series of simple replace rules.Rules are ordered properly to have a good result.
+- Eg : sses --> ss
+- Eg : ies --> i
+
+Morphology techniques depends on the language. Some are quite difficult.
